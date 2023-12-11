@@ -29,9 +29,9 @@
         }}
       </p>
       <p class="text-8xl mb-8">
-        {{ Math.round(weatherData.current.temp) }}&deg;
+        {{ Math.round(weatherData.current.temp) }}&deg;C
       </p>
-      <p>Feels like {{ Math.round(weatherData.current.feels_like) }} &deg;</p>
+      <p>Feels like {{ Math.round(weatherData.current.feels_like) }} &deg;C</p>
       <p class="capitalize">
         {{ weatherData.current.weather[0].description }}
       </p>
@@ -116,7 +116,7 @@ const getWeatherData = async () => {
         route.query.lat
       }&lon=${route.query.lng}&exclude={part}&appid=${
         import.meta.env.VITE_OPENWEATHER_API_KEY
-      }`
+      }&units=metric`
     );
 
     // cal current date & time
