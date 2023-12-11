@@ -37,7 +37,8 @@ const getCities = async () => {
       savedCities.value[index].weather = value.data;
     });
 
-    console.log(savedCities);
+    // Delay to deal with flicker
+    await new Promise((res) => setTimeout(res, 500));
   }
 };
 
