@@ -1,5 +1,5 @@
 <template>
-  <div v-for="city in savedCities" :key="city.id">
+  <div v-for="city in savedCities" :key="city.id" class="mb-4">
     <CityCard :city="city" @click="goToCityView(city)" />
   </div>
   <p v-if="savedCities.length === 0">
