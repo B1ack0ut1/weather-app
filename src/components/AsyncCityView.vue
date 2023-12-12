@@ -102,7 +102,7 @@
       </div>
     </div>
     <div
-      class="flex items-center gap-2 py-12 text-white cursor-pointer duration-150 hover:text-red-500"
+      class="flex items-center gap-2 px-4 py-2 my-10 text-white cursor-pointer duration-150 hover:text-red-500"
       @click="removeCity"
     >
       <i class="fa-solid fa-trash"></i>
